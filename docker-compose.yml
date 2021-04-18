@@ -1,0 +1,26 @@
+version: "3"
+services:
+  app:
+    image: apk-tt:1.1
+    container_name: flask
+#    build:
+#      dockerfile: Dockerfile
+    volumes:
+      - ./app:/app
+    networks:
+      - apk
+
+  nginx:
+    image: nginx
+    container_name: apk-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./volumes/nginx:/etc/nginx/conf.d
+    networks:
+      - apk
+
+networks:
+  apk:
+    driver: bridge
