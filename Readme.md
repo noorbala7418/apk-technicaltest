@@ -18,12 +18,15 @@
  - کانفیگ ریورس پروکسی و بقیه موارد در Volume قابل دسترسی هستند.
 
 ## Run
+
 <div dir="rtl">
 پس از اجرای دستورات زیر، می‌توان سرویس را اجرا کرد:
 </div>
+
 ``` docker build -t apk-tt:1.1 . ```
 
 ``` docker-compose up -d ```
+
 <div dir="rtl">
 سرویس Nginx روی پورت 80 درحال سرویس‌دهی است.با زدن درخواست GET به http://localhost شما به آدرس http://localhost/api می‌شوید.
 </div>
