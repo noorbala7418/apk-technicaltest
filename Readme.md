@@ -20,7 +20,7 @@
 ## Run
 <div dir="rtl">
 پس از اجرای دستورات زیر، می‌توان سرویس را اجرا کرد:
-
+</div>
 ``` docker build -t apk-tt:1.1 . ```
 
 ``` docker-compose up -d ```
